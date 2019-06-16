@@ -1,0 +1,23 @@
+# cache information
+__pycache__/
+
+# notebook checkpoint
+.ipynb_checkpoints/
+
+# all file starts with tmp
+tmp*
+
+# all compressed file
+*.tar.gz
+
+# all Untitled notebook
+Untitled*.ipynb
+
+# all test file
+test/*
+
+# catboost temp file
+cat_feature_index.*
+
+# catboost info
+catboost_info/
