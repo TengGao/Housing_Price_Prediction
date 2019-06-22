@@ -21,3 +21,6 @@ cat_feature_index.*
 
 # catboost info
 catboost_info/
+
+# keep the catboost sample file local
+catboost_playground.ipynb 
