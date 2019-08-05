@@ -1,4 +1,4 @@
-from plotly import tools
+from plotly.subplots import make_subplots
 import plotly.graph_objs as go
 from plotly.offline import iplot
 import cufflinks as cf
@@ -11,8 +11,8 @@ from math import ceil
 def histogram_grid(data, histfunc="count", asFigure=False, **layout):
     # Add Histogram function soon
     num_rows = data.shape[1] // 2 + 1
-    fig = tools.make_subplots(
-        rows=num_rows, cols=2, print_grid=False, subplot_titles=(data.columns)
+    fig = make_subplots(
+        rows=num_rows, cols=2, print_grid=False, subplot_titles=list(data.columns)
     )
 
     title = (
@@ -46,7 +46,7 @@ def scatter_target_plot(
     data, select_columns, target, num_cols=3, asFigure=False, **layout
 ):
     num_rows = ceil(len(select_columns) / num_cols)
-    fig = tools.make_subplots(
+    fig = make_subplots(
         rows=num_rows, cols=num_cols, print_grid=False, subplot_titles=select_columns
     )
     for i, col in enumerate(select_columns):
