@@ -1,7 +1,7 @@
 plotly==3.10.0
 plotly-express==0.3.0
 cufflinks==0.15
-numpy==1.13.3
+numpy==1.22.0
 pandas==0.24.2
 catboost==0.13.1
 eli5==0.8.2
